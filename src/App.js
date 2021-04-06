@@ -1,23 +1,34 @@
 import logo from './logo.svg';
+import React, {useState} from "react"
+
 import './App.css';
+import { Button } from './components/Button';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <h1 className="">Button Components</h1>
+     <div className="button-row">
+      
+      <Button onClick={() => {console.log("You clicked me!")}}
+      type="button"
+      buttonStyle="btn--primary--default"
+      buttonSize="btn--large"
+      >Try Here</Button>
+
+      <Button onClick={() => {}}
+      type="button"
+      buttonStyle="btn--secondary--default"
+      buttonSize="btn--large"
+      >Try Here</Button>
+
+      <Button onClick={() => {console.log("You clicked me!")}}
+      type="button"
+      buttonStyle="btn--tertiary--default"
+      buttonSize="btn--large"
+      > Try Here</Button>
+    </div> 
     </div>
   );
 }
