@@ -2,6 +2,8 @@
     --primary: #A8D0E6;
     --secondary: #374785;
     --accent: #F76C6C;
+    --accent-dark: #E45B5B;
+    --accent-50: #F9CDCD;
 }
 
 .button-row{
@@ -13,7 +15,17 @@
     width:100%;
 }
 
+.bi{
+    margin-right: 8px;
+}
+
+.icon-right{
+    margin-right: 8px;
+}
+
 .btn {
+    display: flex;
+    align-items:center;
     font-family: "Manrope", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -30,21 +42,27 @@
 
 .btn:hover{
     filter: none;
-    background: #E45B5B;
+    background: var(--accent-dark);
     color: white;
-    border-color: #E45B5B;
+    border-color: var(--accent-dark);
+}
+
+.btn:active{
+    background: var(--accent-50);
+    border-color: var(--accent-50);
+    color: var(--accent);
 }
 
 /* Button Colors and Styles */
 
-.btn--primary--default{
+.btn--primary{
     background: var(--accent);
     color: white;
     border-color: var(--accent);
     filter: drop-shadow(0px 4px 12px rgba(247, 108, 108, 0.50));
 }
 
-.btn--secondary--default{
+.btn--secondary{
     background: transparent;
     color: var(--accent);
     filter: none;
@@ -53,7 +71,7 @@
     box-sizing: border-box;
 }
 
-.btn--tertiary--default{
+.btn--tertiary{
     background: transparent;
     color: var(--accent);
     filter: none;
@@ -72,4 +90,5 @@
     padding: 12px 24px;
     font-size: 18px;
 }
+
  

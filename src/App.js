@@ -5,29 +5,64 @@ import './App.css';
 import { Button } from './components/Button';
 
 function App() {
-
   return (
     <div className="App">
      <h1 className="">Button Components</h1>
      <div className="button-row">
       
-      <Button onClick={() => {console.log("You clicked me!")}}
-      type="button"
-      buttonStyle="btn--primary--default"
-      buttonSize="btn--large"
-      >Try Here</Button>
+      <Button
+      onClick={() => alert("hello")}
+      buttonStyle="btn--primary"
+      buttonSize="btn--small">
+        <ion-icon class="icon-right" name="heart"/>
+        Button
+      </Button> 
 
-      <Button onClick={() => {}}
-      type="button"
-      buttonStyle="btn--secondary--default"
-      buttonSize="btn--large"
-      >Try Here</Button>
+      <Button
+      onClick={() => alert("hello")}
+      buttonStyle="btn--secondary"
+      buttonSize="btn--small">
+        <ion-icon class="icon-right" name="heart"/>
+        Button
+      </Button> 
 
-      <Button onClick={() => {console.log("You clicked me!")}}
-      type="button"
-      buttonStyle="btn--tertiary--default"
-      buttonSize="btn--large"
-      > Try Here</Button>
+      <Button
+      onClick={() => alert("hello")}
+      buttonStyle="btn--tertiary"
+      buttonSize="btn--small">
+        <ion-icon class="icon-right" name="heart"/>
+        Button
+      </Button> 
+
+      <Button
+      onClick={() => alert("hello")}
+      buttonStyle="btn--primary"
+      buttonSize="btn--large">
+        <ion-icon class="icon-right" name="heart"/>
+        Button
+      </Button> 
+
+      <Button
+      onClick={() => alert("hello")}
+      buttonStyle="btn--secondary"
+      buttonSize="btn--large">
+        <ion-icon class="icon-right" name="heart"/>
+        Button
+      </Button> 
+
+
+      <Button
+      onClick={() => alert("hello")}
+      buttonStyle="btn--tertiary"
+      buttonSize="btn--large">
+        <ion-icon class="icon-right" name="heart"/>
+        Button
+      </Button> 
+
+
+
+     
+
     </div> 
     </div>
   );
