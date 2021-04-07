@@ -1,11 +1,3 @@
-:root{
-    --primary: #A8D0E6;
-    --secondary: #374785;
-    --accent: #F76C6C;
-    --accent-dark: #E45B5B;
-    --accent-50: #F9CDCD;
-}
-
 .button-row{
     display: flex;
     flex-direction: row;
@@ -15,11 +7,7 @@
     width:100%;
 }
 
-.bi{
-    margin-right: 8px;
-}
-
-.icon-right{
+.mr-8{
     margin-right: 8px;
 }
 
