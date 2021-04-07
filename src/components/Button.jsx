@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import Style from "./button.css";
+import Style from '../styles/component-styles/button.css'
 
 //-----array of styles
 const STYLES = [
