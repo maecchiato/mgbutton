@@ -3,6 +3,7 @@ import React, {useState} from "react"
 
 import './App.css';
 import { Button } from './components/Button';
+import { LinkButton } from './components/LinkButton';
 
 export default function App() {
   const [buttons, setButtons] = useState([
@@ -26,6 +27,11 @@ export default function App() {
           children={button.children} />
         ))}
       </div>
+      <LinkButton>Trial 1</LinkButton>
+      <LinkButton
+      buttonBg="linkbtn--dark"
+      buttonSize="linkbtn--large"
+      >Trial 2</LinkButton>
     </div>
   );
 }

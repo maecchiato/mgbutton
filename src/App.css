@@ -7,10 +7,20 @@
   --accent: #F76C6C;
   --accent-dark: #E45B5B;
   --accent-50: #F9CDCD;
+  --primary-25:#EBF4F9;
 }
 
 .App {
   text-align: center;
+}
+
+.button-row{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  padding: 8px;
+  width:100%;
 }
 
 /* .App-logo {

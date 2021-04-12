@@ -13,12 +13,12 @@ const SIZES = [
     "linkbtn--large",
 ];
 
-export const LinkButton = (
+export const LinkButton = ({
     children,
     href,
     buttonBg,    
     buttonSize
-) => { 
+}) => { 
     //-----checks if the style is included in the array and if not, fallbacks to the first value in the list
     const checkButtonBg = BACKGROUNDS.includes(buttonBg) ? buttonBg : BACKGROUNDS[0];
 
@@ -26,9 +26,17 @@ export const LinkButton = (
     const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
    
     return (
-        <div>
-            <a className={`a ${checkButtonBg} ${checkButtonSize}`}
-            href={href}>{children}</a>
+        // <div className="link-btn">
+        //     <div>
+        //         <a className={`a ${checkButtonBg} ${checkButtonSize}`}
+        //         href={href}>{children}</a>
+        //     </div>
+            
+        // </div>
+
+        <div className="link-btn">
+            <a className={`${checkButtonBg} ${checkButtonSize}`}
+            href="#">{children}</a>
         </div>
     )
 };
