@@ -24,7 +24,7 @@ export default function App() {
           buttonStyle={button.buttonStyle} 
           buttonSize={button.buttonSize} 
           >
-            <i class="bi bi-arrow-left mr-8"></i>
+            <i className="bi bi-arrow-left mr-8"></i>
              {button.children}
             </Button>
         ))}
