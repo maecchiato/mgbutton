@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     padding: 8px 0px 0px;
+    width: fit-content;
 }
 
 a{
@@ -23,15 +24,22 @@ a:before {
   transition: all .3s;
 }
 
-a:active {
-    color: var(--primary);
-}
-
 .link-btn a{
     position: relative;
 }
 
-.link-btn a:after {
+.link-btn a:hover:after {
+    width: 100%;
+}
+
+
+/* Button Colors and Styles */
+
+.linkbtn--dark a{
+    color: var(--secondary) !important;
+}
+
+.linkbtn--dark a:after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -40,26 +48,45 @@ a:active {
     width: 0%;
     content: '.';
     color: transparent;
-    background: var(--secondary);
     height: 6px;
+    background: var(--secondary);
 }
 
-.link-btn a:hover:after {
-    width: 100%;
+.linkbtn--dark a:active{
+    color: var(--primary ) !important;
 }
 
-.link-btn a:active:after {
+.linkbtn--dark a:active:after {
     background: var(--primary);
 }
 
-/* Button Colors and Styles */
-
-.linkbtn--light{
-    color: var(--primary);
+.linkbtn--light a{
+    color: var(--primary-25) !important;
 }
 
-.linkbtn--dark{
-    color: var(--secondary);
+.linkbtn--light a:hover{
+    color: var(--primary) !important;
+}
+
+.linkbtn--light a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    height: 6px;
+    background: var(--primary);
+}
+
+.linkbtn--light a:active{
+    color: var(--primary-25) !important;
+}
+
+.linkbtn--light a:active:after {
+    background: var(--primary-25);
 }
 
 .linkbtn--small{

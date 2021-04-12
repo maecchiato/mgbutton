@@ -34,9 +34,8 @@ export const LinkButton = ({
             
         // </div>
 
-        <div className="link-btn">
-            <a className={`${checkButtonBg} ${checkButtonSize}`}
-            href="#">{children}</a>
+        <div className={`link-btn ${checkButtonBg} ${checkButtonSize}`}>
+          <a className="" href="#">{children}</a>
         </div>
     )
 };
