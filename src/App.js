@@ -23,8 +23,10 @@ export default function App() {
           <Button 
           buttonStyle={button.buttonStyle} 
           buttonSize={button.buttonSize} 
-          iconName={button.iconName} 
-          children={button.children} />
+          >
+            <i class="bi bi-arrow-left mr-8"></i>
+             {button.children}
+            </Button>
         ))}
       </div>
       <div className="button-row bg-dark"> 

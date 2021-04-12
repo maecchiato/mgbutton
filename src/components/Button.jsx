@@ -17,7 +17,6 @@ const SIZES = [
 export const Button = ({
     children,
     type,
-    iconName,
     onClick,
     buttonStyle,
     buttonSize
@@ -28,6 +27,7 @@ export const Button = ({
 
      //-----checks if the size is included in the array and if not, fallbacks to the first value in the list
     const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
+    
 
     return(
         <div>
@@ -35,7 +35,6 @@ export const Button = ({
             onClick={onClick}
             type={type}
             >   
-                <ion-icon class="mr-8" name={iconName}/>
                 {children}
             </button>
         </div>
