@@ -27,12 +27,14 @@ export default function App() {
           children={button.children} />
         ))}
       </div>
-      <div className="button-row"> 
-      <LinkButton>Trial 1</LinkButton>
-      <LinkButton
-      buttonBg="linkbtn--dark"
-      buttonSize="linkbtn--large"
-      >Trial 2</LinkButton>
+      <div className="button-row bg-dark"> 
+        <LinkButton>Link Small Light</LinkButton>
+      </div>
+      <div className="button-row">
+        <LinkButton
+        buttonBg="linkbtn--dark"
+        buttonSize="linkbtn--large"
+        >Link Large Dark</LinkButton>
       </div>
      
     </div>
