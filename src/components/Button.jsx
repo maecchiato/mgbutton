@@ -3,15 +3,15 @@ import '../styles/component-styles/button.css'
 
 //-----array of styles
 const STYLES = [
-    "btn--primary",
-    "btn--secondary",  
-    "btn--tertiary",
+    "primary",
+    "secondary",  
+    "tertiary",
 ];
 
 //-----array of sizes
 const SIZES = [
-    "btn--small",
-    "btn--large",
+    "small",
+    "large",
 ];
 
 export const Button = ({

@@ -3,14 +3,14 @@ import '../styles/component-styles/linkbutton.css'
 
 //-----array of styles
 const BACKGROUNDS = [
-    "linkbtn--light",
-    "linkbtn--dark",  
+    "light",
+    "dark",  
 ];
 
 //-----array of sizes
 const SIZES = [
-    "linkbtn--small",
-    "linkbtn--large",
+    "small",
+    "large",
 ];
 
 export const LinkButton = ({

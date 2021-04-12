@@ -30,21 +30,21 @@
 
 /* Button Colors and Styles */
 
-.btn--primary{
+.primary{
     background: var(--accent);
     color: white;
     border-color: var(--accent);
     filter: drop-shadow(0px 4px 12px rgba(247, 108, 108, 0.50));
 }
 
-.btn--primary:hover{
+.primary:hover{
     filter: none;
     background: var(--accent-dark);
     color: white;
     border-color: var(--accent-dark);
 }
 
-.btn--secondary{
+.secondary{
     background: transparent;
     color: var(--accent);
     filter: none;
@@ -53,33 +53,33 @@
     box-sizing: border-box;
 }
 
-.btn--secondary:hover{
+.secondary:hover{
     filter: none;
     background: var(--accent-dark);
     color: white;
     border-color: var(--accent-dark);
 }
 
-.btn--tertiary{
+.tertiary{
     background: transparent;
     color: var(--accent);
     filter: none;
     border-color: transparent;
 }
 
-.btn--tertiary:hover{ 
+.tertiary:hover{ 
     filter: drop-shadow(0px 5px 3px rgba(247, 108, 108, 0.5));
 }
 
 
 /* Button Sizes */
 
-.btn--small{
+.small{
     padding: 8px 24px;
     font-size: 14px;
 }
 
-.btn--large{
+.large{
     padding: 12px 24px;
     font-size: 18px;
 }

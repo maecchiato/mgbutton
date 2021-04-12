@@ -34,11 +34,11 @@ a:before {
 
 /* Button Colors and Styles */
 
-.linkbtn--dark a{
+.dark a{
     color: var(--secondary) !important;
 }
 
-.linkbtn--dark a:after {
+.dark a:after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -51,23 +51,23 @@ a:before {
     background: var(--secondary);
 }
 
-.linkbtn--dark a:active{
+.dark a:active{
     color: var(--primary ) !important;
 }
 
-.linkbtn--dark a:active:after {
+.dark a:active:after {
     background: var(--primary);
 }
 
-.linkbtn--light a{
+.light a{
     color: var(--primary-25) !important;
 }
 
-.linkbtn--light a:hover{
+.light a:hover{
     color: var(--primary) !important;
 }
 
-.linkbtn--light a:after {
+.light a:after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -80,20 +80,20 @@ a:before {
     background: var(--primary);
 }
 
-.linkbtn--light a:active{
+.light a:active{
     color: var(--primary-25) !important;
 }
 
-.linkbtn--light a:active:after {
+.light a:active:after {
     background: var(--primary-25);
 }
 
-.linkbtn--small{
+.small{
     font-size: 16px;
     line-height: 20px;
 }
 
-.linkbtn--large{
+.large{
     font-size: 18px;
     line-height: 22px;
 }
