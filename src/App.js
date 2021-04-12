@@ -19,22 +19,22 @@ export default function App() {
     <div className="App">
       <h1 className="">Button Components</h1>
       <div className="button-row">   
-        {/* {buttons.map(button => (
+        {buttons.map(button => (
           <Button 
           buttonStyle={button.buttonStyle} 
           buttonSize={button.buttonSize} 
           iconName={button.iconName} 
           children={button.children} />
-        ))} */}
+        ))}
       </div>
       <div className="button-row bg-dark"> 
-        {/* <LinkButton>Link Small Light</LinkButton> */}
+        <LinkButton>Link Small Light</LinkButton>
       </div>
       <div className="button-row">
-        {/* <LinkButton
+        <LinkButton
         buttonBg="dark"
         buttonSize="large"
-        >Link Large Dark</LinkButton> */}
+        >Link Large Dark</LinkButton>
       </div>
      
     </div>
